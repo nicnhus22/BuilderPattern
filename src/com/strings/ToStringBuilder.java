@@ -20,11 +20,12 @@ public class ToStringBuilder {
 			finalString += "the "+attribute.getKey()+" is "+attribute.getValue()+" ";
 		}
 		
-		return finalString;
+		return stringBeautifuler(finalString);
 	}
 	
 	public String stringBeautifuler(String originalString){
 		originalString = originalString.trim();
+		originalString += ".";
 		originalString = originalString.substring(0, 1).toUpperCase() + originalString.substring(1);
 		return originalString;
 	}
