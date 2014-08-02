@@ -48,7 +48,7 @@ public class RubiksCube {
 	
 	@Override
 	public String toString() {
-	    return new ToStringBuilder().append("name", this.name)
+	    return new ToStringBuilder(this).append("name", this.name)
 	    		.append("size", this.size)
 	    		.append("type", this.type)
 	    		.toString();

@@ -17,6 +17,12 @@ public class Driver {
 				.withType(RubiksCubeHelper.Type.REGULAR)
 				.build());
 		
+		rubiksList.add(new RubiksCube.Builder()
+				.withName("NicsCube")
+				.withSize(RubiksCubeHelper.Size._7x7)
+				.withType(RubiksCubeHelper.Type.REGULAR)
+				.build());
+		
 		System.out.println(rubiksList.get(0));
 	}
 }
