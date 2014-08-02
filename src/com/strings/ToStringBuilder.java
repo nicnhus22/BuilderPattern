@@ -8,8 +8,9 @@ public class ToStringBuilder {
 	private List<Pair> string = new ArrayList<Pair>();
 	private String finalString;
 	
-	public void append(String key, String value){
+	public ToStringBuilder append(String key, String value){
 		string.add(new Pair(key, value));
+		return this;
 	}
 	
 	public String toString(){
