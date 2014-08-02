@@ -43,6 +43,11 @@ public class RubiksCube {
 		}
 	}
 	
+	@Override
+	public String toString() {
+	    return this.name+" "+this.size+" "+this.type;
+	}
+	
 	public String getName() {
 		return name;
 	}
