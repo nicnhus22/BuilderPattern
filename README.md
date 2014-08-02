@@ -1,4 +1,4 @@
 BuilderPattern
 ==============
 
-Sexy pattern in Java. Will change your way of build objects.
+Sexy pattern in Java. Will change your way of building objects.
