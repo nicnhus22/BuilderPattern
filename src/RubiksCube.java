@@ -11,7 +11,7 @@ public class RubiksCube {
 		this.type = builder.type;
 	}
 	
-	private static class Builder {
+	public static class Builder {
 		
 		private String name;
 		private String type;
@@ -28,12 +28,12 @@ public class RubiksCube {
 			return this;
 		}
 		
-		public Builder withSize(RubiksCubeHelper.Size size){
+		public Builder withSize(String size){
 			this.size = size.toString();
 			return this;
 		}
 		
-		public Builder withType(RubiksCubeHelper.Type type){
+		public Builder withType(String type){
 			this.type = type.toString();
 			return this;
 		}
@@ -41,6 +41,29 @@ public class RubiksCube {
 		public RubiksCube build(){
 			return new RubiksCube(this);
 		}
-		
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getSize() {
+		return size;
+	}
+
+	public void setSize(String size) {
+		this.size = size;
 	}
 }
